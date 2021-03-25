@@ -1,7 +1,3 @@
-const quizContainer = document.getElementById("quiz");
-const resultsContainer = document.getElementById("results");
-const submitButton = document.getElementById("submit");
-
 function buildQuiz() {
   // variable to store the HTML output
   const output = [];
@@ -16,17 +12,17 @@ function buildQuiz() {
       // ...add an HTML radio button
       answers.push(
         `<label>
-              <input type="radio" name="question${questionNumber}" value="${letter}">
-              ${letter} :
-              ${currentQuestion.answers[letter]}
-            </label>`
+                <input type="radio" name="question${questionNumber}" value="${letter}">
+                ${letter} :
+                ${currentQuestion.answers[letter]}
+              </label>`
       );
     }
 
     // add this question and its answers to the output
     output.push(
       `<div class="question"> ${currentQuestion.question} </div>
-          <div class="answers"> ${answers.join("")} </div>`
+            <div class="answers"> ${answers.join("")} </div>`
     );
   });
 
@@ -36,11 +32,10 @@ function buildQuiz() {
 
 function showResults() {}
 
-// display quiz right away
-buildQuiz();
 
-// on submit, show results
-submitButton.addEventListener("click", showResults);
+const quizContainer = document.getElementById("quiz");
+const resultsContainer = document.getElementById("results");
+const submitButton = document.getElementById("submit");
 
 const myQuestions = [
   {
@@ -72,3 +67,9 @@ const myQuestions = [
     correctAnswer: "d"
   }
 ];
+
+// display quiz right away
+buildQuiz();
+
+// on submit, show results
+submitButton.addEventListener("click", showResults);
