@@ -44,30 +44,30 @@ submitButton.addEventListener("click", showResults);
 
 const myQuestions = [
   {
-    question: "Who invented JavaScript?",
+    question: "Where is Digital DreamsHQ Located?",
     answers: {
-      a: "Douglas Crockford",
-      b: "Sheryl Sandberg",
-      c: "Brendan Eich"
+      a: "New Haven",
+      b: "Independence Layout",
+      c: "GRA Enugu"
     },
     correctAnswer: "c"
   },
   {
-    question: "Which one of these is a JavaScript package manager?",
+    question: "Which one of these is DD manager?",
     answers: {
-      a: "Node.js",
-      b: "TypeScript",
-      c: "npm"
+      a: "Mr Clinton",
+      b: "Mr Ben",
+      c: "Mr Chux"
     },
     correctAnswer: "c"
   },
   {
-    question: "Which tool can you use to ensure code quality?",
+    question: "Who is DD's best developer",
     answers: {
-      a: "Angular",
-      b: "jQuery",
-      c: "RequireJS",
-      d: "ESLint"
+      a: "Victor",
+      b: "Amos",
+      c: "Kingsley",
+      d: "Kc"
     },
     correctAnswer: "d"
   }
